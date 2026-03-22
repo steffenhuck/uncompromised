@@ -188,19 +188,20 @@ h1 {
   }
 
   .cast-label {
-    margin-bottom: 14px;
-  }
+  margin-bottom: 16px;
+  font-size: 1.05rem;   /* was smaller */
+}
 
-  .cast {
-    gap: 8px;
-    margin-bottom: 56px;
-    font-size: 0.66rem;
-    letter-spacing: 0.08em;
-  }
+.cast {
+  gap: 10px;
+  margin-bottom: 62px;
+  font-size: 0.92rem;   /* increased */
+  letter-spacing: 0.05em; /* reduced from 0.06–0.08 */
+}
 
-  .cast .sep {
-    height: 12px;
-  }
+.cast .sep {
+  height: 14px;
+}
 
   .blood-drop {
     width: 150px;
