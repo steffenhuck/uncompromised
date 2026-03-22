@@ -1,166 +1,133 @@
-:root {
-  --bg: #f6f1ef;
-  --text: #1a1a1a;
-  --muted: #555;
-  --light-muted: #bbb;
-  --blood: #7a0f14;
-  --signature: #9a948d;
-  --max-width: 880px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Uncompromised</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-}
+<div class="container">
 
-html, body {
-  margin: 0;
-  overflow-x: hidden;
-}
+  <div class="title-block">
+    <h1>
+      <span class="title-line">THE</span>
+      <span class="title-line">UNCOMPROMISED</span>
+    </h1>
+    <div class="subtitle">A Very Short Play</div>
+  </div>
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.65;
-}
+  <div class="cast-label">Cast</div>
+  <div class="cast">
+    <span>Seneca</span>
+    <span class="sep"></span>
+    <span>Medea</span>
+    <span class="sep"></span>
+    <span>The Stranger</span>
+  </div>
 
-/* container */
+  <div class="play">
 
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 100px 28px 90px;
-  position: relative;
-  overflow: hidden;
-}
+    <img src="blood-drop.png" alt="" class="blood-drop" />
 
-/* title */
+    <div class="speaker">Seneca</div>
+    <div class="line">I obeyed.</div>
 
-.title-block {
-  text-align: center;
-  margin-bottom: 60px;
-}
+    <div class="speaker">Medea</div>
+    <div class="line">I avenged.</div>
 
-h1 {
-  margin: 0;
-  color: var(--blood);
-  font-weight: 700;
-  line-height: 0.95;
-}
+    <div class="speaker">The Stranger</div>
+    <div class="line">I planned.</div>
 
-.title-line {
-  display: block;
-  font-size: 4.2rem;
-  letter-spacing: 0.02em;
-}
+    <div class="stage-direction">(Pause.)</div>
 
-.title-line:first-child {
-  margin-bottom: 10px;
-}
+    <div class="speaker">Seneca</div>
+    <div class="line">I killed myself.</div>
 
-.subtitle {
-  margin-top: 28px;
-  font-size: 1.35rem;
-  font-style: italic;
-  color: #444;
-}
+    <div class="speaker">Medea</div>
+    <div class="line">I killed my children.</div>
 
-/* cast */
+    <div class="speaker">The Stranger</div>
+    <div class="line">I killed myself and many others.</div>
 
-.cast-label {
-  text-align: center;
-  margin-bottom: 12px;
-  color: var(--muted);
-}
+    <div class="stage-direction">(Another pause.)</div>
 
-.cast {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.95rem;
-  margin-bottom: 60px;
-}
+    <div class="speaker">Seneca</div>
+    <div class="stage-direction">(turning to The Stranger)</div>
+    <div class="line">Did you know them?</div>
 
-.cast .sep {
-  width: 1px;
-  height: 14px;
-  background: var(--light-muted);
-}
+    <div class="speaker">The Stranger</div>
+    <div class="line">That was not necessary.</div>
 
-/* play */
+    <div class="speaker">Medea</div>
+    <div class="line">I loved my children.</div>
 
-.play {
-  position: relative;
-}
+    <div class="speaker">The Stranger</div>
+    <div class="line">I loved the idea.</div>
 
-.blood-drop {
-  position: absolute;
-  width: 300px;
-  right: -60px;
-  top: 20px;
-  opacity: 0.85;
-  pointer-events: none;
-}
+    <div class="speaker">Seneca</div>
+    <div class="line">I preserved myself.</div>
 
-/* text */
+    <div class="speaker">Medea</div>
+    <div class="line">How can the self be preserved if it is dead?</div>
 
-.speaker {
-  margin-top: 24px;
-  font-variant: small-caps;
-  letter-spacing: 0.04em;
-  color: #444;
-  font-size: 1.1rem;
-}
+    <div class="speaker">Seneca</div>
+    <div class="line">In the same way your love survives.</div>
 
-.line {
-  margin-left: 18px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
+    <div class="speaker">The Stranger</div>
+    <div class="line">In the same way the idea survives.</div>
 
-.stage-direction {
-  margin-left: 8px;
-  font-style: italic;
-  color: #7a746d;
-  font-size: 1rem;
-}
+    <div class="speaker">Medea</div>
+    <div class="line">It is not the same.</div>
 
-/* signature */
+    <div class="speaker">Seneca</div>
+    <div class="line">Where is the difference?</div>
 
-.signature {
-  margin-top: 60px;
-  text-align: center;
-}
+    <div class="speaker">Medea</div>
+    <div class="line">They are dead.</div>
 
-.signature a {
-  text-decoration: none;
-  color: var(--signature);
-  letter-spacing: 0.2em;
-  text-transform: lowercase;
-}
+    <div class="speaker">The Stranger</div>
+    <div class="line">My idea thrives.</div>
 
-/* MOBILE */
+    <div class="speaker">Seneca</div>
+    <div class="line">Mine endures.</div>
 
-@media (max-width: 700px) {
+    <div class="speaker">The Stranger</div>
+    <div class="line">What is yours?</div>
 
-  .title-line {
-    font-size: 2.4rem;
-    letter-spacing: 0;
-  }
+    <div class="speaker">Seneca</div>
+    <div class="line">That which could not be compromised.</div>
 
-  .cast {
-    font-size: 0.9rem;
-  }
+    <div class="speaker">Medea</div>
+    <div class="line">I certainly went through with it.</div>
 
-  .blood-drop {
-    width: 180px;
-    right: -20px;
-    top: 80px;
-  }
+    <div class="speaker">The Stranger</div>
+    <div class="line">So did I.</div>
 
-  .line {
-    font-size: 1.15rem;
-  }
-}
+    <div class="stage-direction">(Pause.)</div>
+
+    <div class="speaker">Seneca</div>
+    <div class="line">What came of it?</div>
+
+    <div class="speaker">The Stranger</div>
+    <div class="line">Fear.</div>
+
+    <div class="speaker">Medea</div>
+    <div class="line">Pain.</div>
+
+    <div class="speaker">Seneca</div>
+    <div class="line">Fear and pain are trifles.</div>
+
+    <div class="stage-direction">(Silence.)</div>
+
+  </div>
+
+  <div class="signature">
+    <a href="https://steffenhuck.github.io">steffen huck</a>
+  </div>
+
+</div>
+
+</body>
+</html>
