@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7f5f2;
+  --bg: #f6f1ef;
   --text: #1a1a1a;
   --muted: #555;
   --light-muted: #bbb;
@@ -84,10 +84,11 @@ h1 {
 
 .blood-drop {
   position: absolute;
-  width: 285px;
-  right: -122px;
-  top: -68px;
-  opacity: 0.94;
+  width: 560px;
+  right: -255px;
+  top: -160px;
+  opacity: 0.86;
+  filter: saturate(90%) contrast(95%);
   pointer-events: none;
   z-index: 0;
 }
@@ -149,9 +150,9 @@ h1 {
 
 @media (max-width: 900px) {
   .blood-drop {
-    width: 240px;
-    right: -96px;
-    top: -56px;
+    width: 430px;
+    right: -210px;
+    top: -130px;
   }
 }
 
@@ -182,9 +183,9 @@ h1 {
   }
 
   .blood-drop {
-    width: 185px;
-    right: -56px;
-    top: -30px;
+    width: 290px;
+    right: -135px;
+    top: -72px;
   }
 
   .speaker {
