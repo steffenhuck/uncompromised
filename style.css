@@ -39,6 +39,7 @@ h1 {
   color: var(--blood);
   font-size: 44px;
   letter-spacing: 0.1em;
+  line-height: 1.05;
 }
 
 .subtitle {
@@ -46,6 +47,7 @@ h1 {
   font-size: 22px;
   font-style: italic;
   color: #444;
+  line-height: 1.2;
 }
 
 /* CAST */
@@ -64,7 +66,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--muted);
-  margin-bottom: 80px;
+  margin-bottom: 84px;
   flex-wrap: wrap;
 }
 
@@ -82,11 +84,19 @@ h1 {
 
 .blood-drop {
   position: absolute;
-  width: 220px;
-  right: -70px;
-  top: -40px;
-  opacity: 0.95;
+  width: 285px;
+  right: -122px;
+  top: -68px;
+  opacity: 0.94;
   pointer-events: none;
+  z-index: 0;
+}
+
+.speaker,
+.line,
+.stage-direction {
+  position: relative;
+  z-index: 1;
 }
 
 /* TEXT */
@@ -97,18 +107,23 @@ h1 {
   font-variant: small-caps;
   letter-spacing: 0.08em;
   color: #444;
+  font-size: 1.08rem;
 }
 
 .line {
   margin-left: 34px;
   margin-bottom: 14px;
+  font-size: 1.08rem;
 }
 
 .stage-direction {
-  margin-left: 34px;
-  margin-bottom: 14px;
+  margin-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 18px;
   font-style: italic;
-  color: #666;
+  color: #7a746d;
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
 /* SIGNATURE */
@@ -123,8 +138,75 @@ h1 {
   color: var(--signature);
   text-transform: lowercase;
   letter-spacing: 0.34em;
+  font-size: 0.9rem;
 }
 
 .signature a:hover {
   color: #777;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .blood-drop {
+    width: 240px;
+    right: -96px;
+    top: -56px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 92px 22px 72px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.07em;
+  }
+
+  .subtitle {
+    margin-top: 30px;
+    font-size: 1.28rem;
+  }
+
+  .cast {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    line-height: 1.8;
+    margin-bottom: 68px;
+  }
+
+  .cast .sep {
+    height: 14px;
+  }
+
+  .blood-drop {
+    width: 185px;
+    right: -56px;
+    top: -30px;
+  }
+
+  .speaker {
+    font-size: 1rem;
+  }
+
+  .line {
+    margin-left: 18px;
+    font-size: 1rem;
+  }
+
+  .stage-direction {
+    margin-left: 10px;
+    font-size: 0.92rem;
+  }
+
+  .signature {
+    margin-top: 76px;
+  }
+
+  .signature a {
+    letter-spacing: 0.24em;
+    font-size: 0.82rem;
+  }
 }
