@@ -5,94 +5,91 @@
   --light-muted: #bbb;
   --blood: #7a0f14;
   --signature: #9a948d;
-  --max-width: 860px;
+  --max-width: 880px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
+html, body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
 }
 
+/* container */
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 110px 32px 88px;
+  padding: 100px 28px 90px;
   position: relative;
+  overflow: hidden;
 }
 
-/* TITLE */
+/* title */
 
 .title-block {
   text-align: center;
-  margin-bottom: 68px;
+  margin-bottom: 60px;
 }
 
 h1 {
   margin: 0;
   color: var(--blood);
   font-weight: 700;
-  line-height: 0.96;
+  line-height: 0.95;
 }
 
 .title-line {
   display: block;
   font-size: 4.2rem;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.02em;
 }
 
 .title-line:first-child {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  margin-top: 38px;
-  font-size: 1.45rem;
+  margin-top: 28px;
+  font-size: 1.35rem;
   font-style: italic;
   color: #444;
-  line-height: 1.2;
 }
 
-/* CAST */
+/* cast */
 
 .cast-label {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--muted);
-  font-size: 1rem;
 }
 
 .cast {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 14px;
-  margin-bottom: 78px;
-  color: var(--muted);
+  gap: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  margin-bottom: 60px;
 }
 
 .cast .sep {
   width: 1px;
-  height: 16px;
+  height: 14px;
   background: var(--light-muted);
-  flex: 0 0 auto;
 }
 
-/* PLAY */
+/* play */
 
 .play {
   position: relative;
@@ -100,146 +97,70 @@ h1 {
 
 .blood-drop {
   position: absolute;
-  width: 380px;
-  right: -120px;
-  top: -70px;
-  opacity: 0.84;
-  filter: saturate(90%) contrast(95%);
+  width: 300px;
+  right: -60px;
+  top: 20px;
+  opacity: 0.85;
   pointer-events: none;
-  z-index: 0;
 }
 
-.speaker,
-.line,
-.stage-direction {
-  position: relative;
-  z-index: 1;
-}
-
-/* TEXT */
+/* text */
 
 .speaker {
-  margin-top: 28px;
-  margin-bottom: 6px;
+  margin-top: 24px;
   font-variant: small-caps;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: #444;
-  font-size: 1.08rem;
+  font-size: 1.1rem;
 }
 
 .line {
-  margin-left: 34px;
-  margin-bottom: 14px;
-  font-size: 1.08rem;
+  margin-left: 18px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .stage-direction {
-  margin-left: 20px;
-  margin-top: 8px;
-  margin-bottom: 18px;
+  margin-left: 8px;
   font-style: italic;
   color: #7a746d;
-  font-size: 0.98rem;
-  line-height: 1.5;
+  font-size: 1rem;
 }
 
-/* SIGNATURE */
+/* signature */
 
 .signature {
-  margin-top: 96px;
+  margin-top: 60px;
   text-align: center;
 }
 
 .signature a {
   text-decoration: none;
   color: var(--signature);
+  letter-spacing: 0.2em;
   text-transform: lowercase;
-  letter-spacing: 0.34em;
-  font-size: 0.9rem;
-}
-
-.signature a:hover {
-  color: #777;
 }
 
 /* MOBILE */
 
 @media (max-width: 700px) {
-  .container {
-    padding: 72px 20px 58px;
-  }
-
-  .title-block {
-    margin-bottom: 42px;
-  }
 
   .title-line {
-    font-size: clamp(2.15rem, 11vw, 2.85rem);
-    letter-spacing: 0.045em;
-  }
-
-  .title-line:first-child {
-    margin-bottom: 6px;
-  }
-
-  .subtitle {
-    margin-top: 20px;
-    font-size: 1rem;
-  }
-
-  .cast-label {
-    margin-bottom: 12px;
-    font-size: 0.95rem;
+    font-size: 2.4rem;
+    letter-spacing: 0;
   }
 
   .cast {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 46px;
-    font-size: 0.8rem;
-    letter-spacing: 0.09em;
-    line-height: 1.3;
-  }
-
-  .cast .sep {
-    display: none;
+    font-size: 0.9rem;
   }
 
   .blood-drop {
-    width: 112px;
-    right: -10px;
-    top: 10px;
-    opacity: 0.68;
-  }
-
-  .speaker {
-    margin-top: 18px;
-    margin-bottom: 3px;
-    font-size: 0.95rem;
-    letter-spacing: 0.07em;
+    width: 180px;
+    right: -20px;
+    top: 80px;
   }
 
   .line {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .stage-direction {
-    margin-left: 2px;
-    margin-top: 4px;
-    margin-bottom: 12px;
-    font-size: 0.87rem;
-    line-height: 1.42;
-  }
-
-  .signature {
-    margin-top: 52px;
-  }
-
-  .signature a {
-    letter-spacing: 0.14em;
-    font-size: 0.74rem;
+    font-size: 1.15rem;
   }
 }
