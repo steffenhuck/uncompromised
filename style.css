@@ -1,0 +1,154 @@
+:root {
+  --bg: #f6f3ee;
+  --text: #111111;
+  --muted: #8d877f;
+  --blood: #7a0f14;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding: 64px 24px 56px;
+}
+
+.blood-drop {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  width: 26px;
+  height: auto;
+  opacity: 0.88;
+  pointer-events: none;
+}
+
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 22px;
+}
+
+.title-block {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--blood);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.08;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #3f3a36;
+}
+
+.cast {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.cast-title {
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.cast-list {
+  line-height: 1.85;
+  font-size: 1.06rem;
+}
+
+.play {
+  width: min(100%, 560px);
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.95;
+}
+
+.character {
+  margin-top: 0.9rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.line,
+.stage {
+  margin-left: 1.7rem;
+}
+
+.stage {
+  font-style: italic;
+}
+
+.signature-wrap {
+  text-align: center;
+  margin-top: 74px;
+  padding-bottom: 10px;
+}
+
+.signature {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.42em;
+  text-transform: lowercase;
+  font-size: 0.88rem;
+}
+
+.signature:hover {
+  color: #6f6962;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 52px 20px 42px;
+  }
+
+  .blood-drop {
+    top: 22px;
+    right: 22px;
+    width: 22px;
+  }
+
+  .wrapper {
+    padding-top: 18px;
+  }
+
+  .title-block {
+    margin-bottom: 34px;
+  }
+
+  .play {
+    font-size: 1.01rem;
+    line-height: 1.85;
+  }
+
+  .line,
+  .stage {
+    margin-left: 1.15rem;
+  }
+
+  .signature {
+    letter-spacing: 0.28em;
+    font-size: 0.82rem;
+  }
+}
